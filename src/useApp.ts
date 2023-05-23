@@ -1,7 +1,7 @@
 import { ref, onMounted } from 'vue';
 
 export const useApp = () => {
-    const makeTriangle = (rows: number) => {
+    const makeTriforce = (rows: number) => {
         let triforce: string = '';
         const blank = ' ';
         let spaces = '';
@@ -19,7 +19,7 @@ export const useApp = () => {
     }
 
     onMounted(() => {
-        console.log(makeTriangle(10));
+        console.log(makeTriforce(10));
     });
 
     return {
